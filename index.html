@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vanilla Web Component(s)</h1>
+    <p>These are native web components. We'll need a polyfill for Microsoft Browsers but otherwise it's a relatively simple implimentation. We have to write things a bit more verbose, as Vue makes these behaviors a lot easier. Plus Vue gives us loads of means to bind data and state. But for simple UI elements on a page that does need or want to convert to Vue this may be a valid option.</p>
+    <tmf-button kind="primary" label="Primary Button" href="/"></tmf-button>
+    <tmf-button kind="secondary" label="Secondary Button" onclick="alert('hi')"></tmf-button>
+    <tmf-button kind="tertiary" label="Tertiary Small" small></tmf-button>
+
+    <div id="app"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script type="module" src="fool/button/index.js"></script>
+    <script type="module" src="vue-app.js"></script>
+</body>
+</html>
